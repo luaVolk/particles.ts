@@ -5,7 +5,7 @@ Port of [Vincent Garreau' particles.js](https://github.com/VincentGarreau/partic
 ## Instalation
 
 ```bash
-$ npm install particlests
+$ npm install particles.ts
 ```
 
 Or just [download](https://raw.githubusercontent.com/TemplarVolk/particles.ts/master/dist/particles.min.js) the minified script and add it in your HTML:
