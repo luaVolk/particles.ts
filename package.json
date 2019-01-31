@@ -1,0 +1,17 @@
+{
+  "name": "particles.ts",
+  "version": "0.0.1",
+  "description": "A highly configurble javascript library for creating interactive particles in the browser",
+  "main": "lib/particles.js",
+  "devDependencies": {
+    "babel-minify": "^0.5.0"
+  },
+  "scripts": {
+    "build": "npm run build-amd && npm run build-dist",
+    "build-amd": "tsc src/particles.ts --outDir lib --lib es6,DOM -d --noImplicitUseStrict",
+    "build-dist": "node build.js && tsc tmp/bundle.ts --outFile dist/particles.js --lib es6,DOM --module none && minify dist/particles.js --out-file dist/particles.min.js --mangle.keepClassName && rm -r tmp",
+    "watch": "tsc src/particles.ts --outFile example/particles.js --lib es6,DOM --module amd --watch --noImplicitUseStrict"
+  },
+  "author": "",
+  "license": "MIT"
+}
