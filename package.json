@@ -1,10 +1,15 @@
 {
   "name": "particles.ts",
   "version": "0.0.1",
+  "homepage": "https://github.com/TemplarVolk/particles.ts",
+  "author": "Volk <templar.volk@yandex.com>",
+  "license": "MIT",
   "description": "A highly configurble javascript library for creating interactive particles in the browser",
   "main": "lib/particles.js",
+  "types": "lib/particles.d.ts",
   "devDependencies": {
-    "babel-minify": "^0.5.0"
+    "babel-minify": "^0.5.0",
+    "typescript": "^3.2.4"
   },
   "scripts": {
     "build": "npm run build-amd && npm run build-dist",
@@ -12,6 +17,7 @@
     "build-dist": "node build.js && tsc tmp/bundle.ts --outFile dist/particles.js --lib es6,DOM --module none && minify dist/particles.js --out-file dist/particles.min.js --mangle.keepClassName && rm -r tmp",
     "watch": "tsc src/particles.ts --outFile example/particles.js --lib es6,DOM --module amd --watch --noImplicitUseStrict"
   },
-  "author": "",
-  "license": "MIT"
+  "files": [
+    "lib/**/*"
+  ]
 }
