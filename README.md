@@ -1,6 +1,6 @@
 # Particles
 
-Port of [Vincent Garreau' particles.js](https://github.com/VincentGarreau/particles.js) which was originally a port of [Vincent Garreau' particles.js](https://github.com/VincentGarreau/particles.js), written in Typescript with added features.
+Port of [particles](https://github.com/TemplarVolk/particles) which was originally a port of [Vincent Garreau' particles.js](https://github.com/VincentGarreau/particles.js), written in Typescript with added features.
 
 ## Instalation
 
@@ -25,6 +25,8 @@ particles = new Particles('id', {/*configuration object*/}).start();
 You can set only the values you want to change in the configuration object. For example the example below will only change the particles color and use the default settings for everything else.
 
 ```js
+import {Particles} from 'particles.ts' // If using it as module
+
 particles = new Particles('id', {
   particles: {
     color: {
