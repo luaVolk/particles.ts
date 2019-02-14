@@ -279,6 +279,21 @@ export class Particle {
         );
         break;
 
+      case 'heart':
+        var x = this.x - radius / 2;
+        var y = this.y - radius / 2;
+
+        this.particles.ctx.moveTo(x, y + radius / 4);
+        this.particles.ctx.quadraticCurveTo(x, y, x + radius / 4, y);
+        this.particles.ctx.quadraticCurveTo(x + radius / 2, y, x + radius / 2, y + radius / 4);
+        this.particles.ctx.quadraticCurveTo(x + radius / 2, y, x + radius * 3 / 4, y);
+        this.particles.ctx.quadraticCurveTo(x + radius, y, x + radius, y + radius / 4);
+        this.particles.ctx.quadraticCurveTo(x + radius, y + radius / 2, x + radius * 3 / 4, y + radius * 3 / 4);
+        this.particles.ctx.lineTo(x + radius / 2, y + radius);
+        this.particles.ctx.lineTo(x + radius / 4, y + radius * 3 / 4);
+        this.particles.ctx.quadraticCurveTo(x, y + radius / 2, x, y + radius / 4);
+        break;
+
       case 'char':
       case 'character':
         this.particles.ctx.font = `${this.particles.settings.particles.shape.character.style} ${this.particles.settings.particles.shape.character.weight} ${Math.round(radius) * 2}px ${this.particles.settings.particles.shape.character.font}`;

@@ -178,7 +178,7 @@ key | type | default | notes
 `particles.number.density.enable` | `boolean` | `true`
 `particles.number.density.value_area` | `number` | `800`
 `particles.color.value` | `string`: Hex or `"random"`<br /> `string[]`: Hex | `#FFFFFF` | Examples: <br /> `"#b61924"` <br /> `["#b61924", "#333333", "999999"]` <br /> `"random"`
-`particles.shape.type` | `string` <br /> `string[]` | `"circle"` | Possible values: <br /> `"circle"` <br /> `"edge"` <br /> `"square"` <br /> `"triangle"` <br /> `"polygon"` <br /> `"star"` <br /> `"character"` <br /> `"char"` <br /> `"image"`
+`particles.shape.type` | `string` <br /> `string[]` | `"circle"` | Possible values: <br /> `"circle"` <br /> `"edge"` <br /> `"square"` <br /> `"triangle"` <br /> `"polygon"` <br /> `"star"` <br /> `"heart"` <br /> `"character"` <br /> `"char"` <br /> `"image"`
 `particles.shape.stroke.width` | `number` | `0`
 `particles.shape.stroke.color` | `string` | `"#FF0000"`
 `particles.shape.polygon.nb_slides` | `number` | `5`
@@ -226,7 +226,7 @@ key | type | default | notes
 `interactivity.events.modes.grab.distance` | `number` | `100`
 `interactivity.events.modes.grab.line_linked.opacity` | `number` | `0.75` | 0 to 1
 `interactivity.events.modes.grab.outer_shape.enable` | `boolean` | `false`
-`interactivity.events.modes.grab.outer_shape.type` | `string` | `"inherit"` | `"inherit"` will use `particles.line_linked` <br /> values <br /> Possible values: <br /> `"inherit"` <br /> `"circle"` <br /> `"edge"` <br /> `"square"` <br /> `"triangle"` <br /> `"polygon"` <br /> `"star"` <br /> `"character"` <br /> `"char"`
+`interactivity.events.modes.grab.outer_shape.type` | `string` | `"inherit"` | `"inherit"` will use `particles.line_linked` <br /> values <br /> Possible values: <br /> `"inherit"` <br /> `"circle"` <br /> `"edge"` <br /> `"square"` <br /> `"triangle"` <br /> `"polygon"` <br /> `"star"` <br /> `"heart"` <br /> `"character"` <br /> `"char"`
 `interactivity.events.modes.grab.outer_shape.size` | `number` | `20` | Added to the particles' size
 `interactivity.events.modes.grab.outer_shape.stroke.width` | `string` <br /> `number` | `"inherit"` | `"inherit"` will use `particles.line_linked` values
 `interactivity.events.modes.grab.outer_shape.stroke.color` | `string` | `"inherit"` | `"inherit"` will use `particles.line_linked` values
