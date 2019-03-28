@@ -2,7 +2,7 @@
   "name": "particles.ts",
   "version": "0.0.1",
   "homepage": "https://github.com/TemplarVolk/particles.ts",
-  "author": "Volk <templar.volk@yandex.com>",
+  "author": "Volk <me@volk.pt>",
   "license": "MIT",
   "description": "A highly configurble javascript library for creating interactive particles in the browser",
   "main": "lib/particles.js",
