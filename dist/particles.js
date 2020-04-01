@@ -147,8 +147,7 @@
         return Math.random() * max;
     }
     function hexToRgb(hex) {
-        hex = hex.replace(/'^#?([a-f\d])([a-f\d])([a-f\d])$'/gi, function (m) {
-            console.log(m[1] + m[1] + m[2] + m[2] + m[3] + m[3]);
+        hex = hex.replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/gi, function (m) {
             return m[1] + m[1] + m[2] + m[2] + m[3] + m[3];
         });
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);

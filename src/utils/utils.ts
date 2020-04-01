@@ -9,9 +9,7 @@ export function randomFloat(max : number = 1) : number {
 }
 
 export function hexToRgb(hex : string) : RGB {
-  hex = hex.replace(/'^#?([a-f\d])([a-f\d])([a-f\d])$'/gi, (m) => {
-    console.log(m[1] + m[1] + m[2] + m[2] + m[3] + m[3]);
-    
+  hex = hex.replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/gi, (m) => {
     return m[1] + m[1] + m[2] + m[2] + m[3] + m[3];
   });
   
