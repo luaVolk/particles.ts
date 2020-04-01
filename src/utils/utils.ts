@@ -1,4 +1,4 @@
-import { Conf, RGB } from './interfaces';
+import { Conf, RGB, DeepPartial } from './interfaces';
 
 export function randomInt(max : number = 1) : number {
   return Math.floor(Math.random() * max)
@@ -25,7 +25,7 @@ export function hexToRgb(hex : string) : RGB {
       : null;
 }
 
-export function deepExtend(destination: Conf, source : Map<any, any>) : Conf {
+export function deepExtend(destination: Conf, source : DeepPartial<Conf>) : Conf {
   for (let property in source) {
     if (source[property] && source[property].constructor &&
      source[property].constructor === Object) {

@@ -183,8 +183,8 @@
     } // 
     var Particle = /** @class */ (function () {
         function Particle(opacity, particles, color, position) {
-            if (position === void 0) { position = null; }
             var _this = this;
+            if (position === void 0) { position = null; }
             this.opacity = opacity;
             this.particles = particles;
             this.position = position;
@@ -510,9 +510,9 @@
     }());
     var Particles = /** @class */ (function () {
         function Particles(id, config) {
+            var _this = this;
             if (id === void 0) { id = 'particles'; }
             if (config === void 0) { config = null; }
-            var _this = this;
             this.id = id;
             this.config = config;
             this.settings = defaultConf;

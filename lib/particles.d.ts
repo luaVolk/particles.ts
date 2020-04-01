@@ -1,14 +1,14 @@
-import { Conf } from './utils/interfaces';
+import { Conf, DeepPartial } from './utils/interfaces';
 export declare class Particles {
     id: string;
-    config: Map<string, any>;
+    config: DeepPartial<Conf>;
     canvas: HTMLCanvasElement;
     ctx: CanvasRenderingContext2D;
     canvasWidth: number;
     canvasHeight: number;
     pxratio: number;
     settings: Conf;
-    constructor(id?: string, config?: Map<string, any>);
+    constructor(id?: string, config?: DeepPartial<Conf>);
     start: () => Particles;
     private retinaInit;
     private createCanvas;
@@ -19,7 +19,7 @@ export declare class Particles {
     private particlesUpdate;
     private particlesDraw;
     private particlesEmpty;
-    particlesRefresh: (config?: Map<string, any>) => void;
+    particlesRefresh: (config?: DeepPartial<Conf>) => void;
     private linkParticles;
     private attractParticles;
     private bounceParticles;

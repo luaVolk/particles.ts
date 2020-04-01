@@ -1,5 +1,5 @@
 import { randomInt, randomFloat, hexToRgb, deepExtend, clamp, isInArray } from './utils/utils';
-import { Conf, XY, RGB } from './utils/interfaces';
+import { Conf, XY, RGB, DeepPartial } from './utils/interfaces';
 import { defaultConf } from './utils/defaults';
 import { Particle } from './particle';
 
@@ -24,7 +24,7 @@ export class Particles {
 
   public settings : Conf = defaultConf;
 
-  constructor(public id : string = 'particles', public config : Map<string, any> = null) {
+  constructor(public id : string = 'particles', public config : DeepPartial<Conf> = null) {
     return this;
   }
 
@@ -293,7 +293,7 @@ export class Particles {
   }
 
 
-  public particlesRefresh = (config : Map<string, any> = null) : void => {
+  public particlesRefresh = (config : DeepPartial<Conf> = null) : void => {
     window.cancelAnimationFrame(this.settings.tmp.checkAnimFrame);
     window.cancelAnimationFrame(this.drawAnimFrame);
     this.settings.tmp.source_svg = null;

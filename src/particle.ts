@@ -7,7 +7,6 @@ export class Particle {
   // public particles : Particles;
 
   public color : {value : string, rgb: RGB, hsl: HSL} = {value : null, rgb: null, hsl: null};
-  // public position : Map<string, any>;
 
   // public opacity : number;
   public opacity_bubble : number;

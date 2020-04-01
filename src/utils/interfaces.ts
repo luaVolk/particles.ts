@@ -159,3 +159,5 @@ export interface XY {
   x: number,
   y : number
 }
+
+export type DeepPartial<T> = {[P in keyof T]?: DeepPartial<T[P]>}
